@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            background-image: url(image_search_1702989196972.jpg);
+            background-attachment: fixed;
+
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .left-list h2 {
+            font-size: 50px;
+            position: relative;
+            left: 50px;
+            top: 10px;
+            color: red;
+            text-shadow: 3px 5px 7px black,
+                3px 2px 20px black;
+
+        }
+
+        .list {
+            width: 100vw;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            position: relative;
+            left: -60px;
+            margin-top: 50px;
+            flex-direction: column;
+
+        }
+
+        .left-list {
+            z-index: 999;
+            width: 60vw;
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            position: fixed;
+
+        }
+
+        .video-box {
+            height: 480px;
+            margin: 30px 10px 10px 50px;
+            background-color: rgba(87, 87, 87, 0.096);
+            border-radius: 6px;
+            padding: 5px;
+
+        }
+
+        .list-container {
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid rgba(0, 0, 0, 0.11);
+            border-radius: 5px;
+            margin: 10px 20px;
+            background-color: rgba(144, 146, 148, 0.16);
+            padding: 30px 10px 30px 10px;
+            transition: 0.4s ease-in-out;
+        }
+
+        .list-container:hover {
+            background-color: rgba(0, 0, 0, 0.368);
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+        }
+
+        .img {
+            transition: 0.4s ease-in-out;
+        }
+
+        .img:hover {
+            margin: 0px 0px 5px 0px;
+
+        }
+
+        .info-list {
+            color: rgb(72, 72, 72);
+            list-style: none;
+        }
+
+        .info-list .name {
+            color: black;
+            font-size: large;
+            padding: 10px;
+            text-transform: uppercase;
+
+        }
+
+        .info-list li {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="left-list">
+            <h2>20<span style=" color: black;">23</span> Top Movie<span style=" color: black;">'s</span> </h2>
+            <div class="video-box">
+                <div class="box" id="box">
+
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-container">
+                <img src="./movie/vikram/vikram_movie_review.jpg" class="img movie" alt="" id="vikram"
+                    data-video-id="OKBMCL-frPU" style="width: 280px;height:180px;">
+                <div class="text-container">
+                    <ul class="info-list">
+                        <li> <span class="name">VIKRAM</span></li>
+                        03 Jun, 2023 | Tamil
+                        2 hrs 53 mins
+                        Action | Thriller
+                        <li> Critic's Rating: <br> <span style="color: red;"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-container">
+                <img src="./movie/viduthalai/maxresdefault.jpg" class="img movie" id="viduthalai"
+                    data-video-id="GYeSfq_bj_M" style="width: 280px;height:180px;">
+                <div class="text-container">
+                    <ul class="info-list">
+                        <li> <span class="name">Viduthalai Part1</span></li>
+
+                        31 Mar, 2023 | Tamil
+                        2 hrs 30 mins | Action Crime-Drama
+                        <li>Critic's Rating: <br> <span style="color: red;"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-container">
+
+                <img src="./movie/mark/a-poster-of-mark-antony-180.avif" data-video-id="Dg8X7SZ_4bs" class="img movie"
+                    id="mark" style="width: 280px;height:180px;">
+                <div class="text-container">
+                    <ul class="info-list">
+                        <li> <span class="name"> Mark Antony</span></li>
+
+                        15 Sep, 2023 | Tamil | Hindi
+                        2 hrs 31 mins | Thriller-Action
+                        <li>Critic's Rating: <br> <span style="color: rgba(147, 0, 0, 0.692);"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-container">
+                <img src="./movie/fight/fight.avif" class="img movie" id="fight" data-video-id="oQVhwMYRgFY"
+                    style="width: 280px;height:180px;">
+                <div class="text-container">
+                    <ul class="info-list">
+                        <li> <span class="name"> Fight Club </span></li>
+
+
+                        15 Dec, 2023 | Tamil
+                        2 hrs 2 mins | Drama Action
+                        <li>Critic's Rating: <br> <span style="color: red;"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i
+                                    class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-container">
+
+                <img src="./movie/ps2/local.cms" class="img movie" id="ps" data-video-id="EnhS3matIoU"
+                    style="width: 280px;height:180px;">
+                <div class="text-container">
+                    <ul class="info-list">
+                        <li> <span class="name">PS- 2 </span></li>
+
+                        28 Apr, 2023 | Tamil | Hindi | Telugu | +2 more
+                        2 hrs 44 mins | Drama Action-Adventure
+                        <li>Critic's Rating: <br> <span style="color: red;"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list-container">
+
+                <img src="./movie/ayothi/ayothi.webp" class="img movie" id="ayothi" data-video-id="EUIhalCuqmM"
+                    style="width: 280px;height:180px;">
+                <div class="text-container">
+                    <ul class="info-list">
+                        <li> <span class="name"> Ayothi </span></li>
+
+
+                        03 Mar, 2023 | Tamil
+                        2 hrs 2 mins | Drama
+                        <li>Critic's Rating: <br> <span style="color: red;"><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+
+        var movieElements = document.querySelectorAll('.movie');
+
+        movieElements.forEach(function (movie) {
+            movie.addEventListener('click', function () {
+                var videoId = movie.getAttribute('data-video-id');
+
+                playYouTubeVideo(videoId);
+            });
+        });
+
+        function playYouTubeVideo(videoId) {
+            var videoContainer = document.getElementById('box');
+            var embedUrl = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+            videoContainer.innerHTML = '<iframe width="853" height="480" src="' + embedUrl + '" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  style="pointer-events: none;"></iframe>';
+        }
+
+    </script>
+
+
+</body>
+
+</html>

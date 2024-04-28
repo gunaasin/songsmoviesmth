@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="./icon087.png">
+    <link href="loginstyle.css" rel="stylesheet">
+    <title>Juz a Login page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            background-image: url(image_search_1702989196972.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        * {
+            letter-spacing: 0.5px;
+
+        }
+
+        .img {
+            object-fit: cover;
+            object-position: left;
+            position: relative;
+            left: 200px;
+            top: 200px;
+            float: left;
+            display: flex;
+            justify-content: left;
+        }
+
+        .whitebox {
+            text-align: center;
+            width: 420px;
+            height: 520px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 350px;
+            top: 50px;
+            background-color: transparent;
+            box-shadow: 10px 6px 20px #000000dc,
+                0px 18px 40px #000000d2,
+                0px 19px 60px #000000c0;
+            outline: none;
+            border-radius: 2px 80px 0px;
+
+
+        }
+
+        .whitebox .sad {
+            color: red;
+            margin-right: 12px;
+            text-shadow: -6px 2px 1px black;
+
+        }
+
+        .whitebox h1 {
+            position: relative;
+            left: -50px;
+            font-size: 50px;
+            font-family:  'Lumanosimo', cursive;
+            text-shadow: -3px 2px 9px rgba(255, 0, 0, 0.164);
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+        }
+
+        .whitebox input {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 20px;
+            width: 80%;
+            padding: 5px;
+            letter-spacing: 1px;
+            font-size: medium;
+            border: none;
+            background-color: transparent;
+            border-bottom: 0.7px solid #00000084;
+            outline: none;
+            resize: none;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .whitebox button {
+            cursor: pointer;
+            border: none;
+            width: 85%;
+            height: 33px;
+            background-color: rgba(0, 0, 0, 0.201);
+            color: rgb(13, 17, 21);
+            transition: 0.3s ease-in-out;
+        }
+
+        .whitebox button:hover {
+            background-color: rgba(0, 0, 0, 0.559);
+            color: rgb(255, 255, 255);
+        }
+
+        .frg-1 {
+            position: relative;
+            left: 120px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 10px;
+            font-size: 12px;
+        }
+
+        .frg-2 {
+            position: relative;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 10px;
+            font-size: 13px;
+        }
+
+        a:hover {
+            color: rgb(255, 0, 0);
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="./homepage.html">
+        <div class="img"> <img src="./Picsart_23-12-19_18-13-58-601.png " height="150 px" width="450px"></div>
+        <div class="whitebox">
+            <div>
+                <h1><span class="sad">Spot</span>Star</h1>
+                <h4>Log in and get a cookie !</h4>
+                <form class="data">
+                    <input type="text" id="usr-name" placeholder="Username / Email"> <br> <br>
+                    <input type="password" id="ps-wrd" placeholder="Password"> <br> <br>
+                    <spam class="frg-1"><a href="./Forget.html">Forgot password ?</a> </spam> <br> <br>
+                    <a>
+                        <button type="submit"> Login</button>
+
+                    </a> <br> <br>
+                </form>
+                <form action="./signup.html">
+                    <label class="frg-2" for="">are you new user ?</label>
+                    <br><br>
+                    <button type="submit" value="Sign Up">Sign Up</button>
+
+
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

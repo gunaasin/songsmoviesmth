@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>songs / Movie </title>
+    <style>
+        body {
+            background-color: white;
+            background-image: url(image_search_1702989196972.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+        .movie {
+            float: left;
+            transition: 1s;
+
+        }
+
+        img {
+            transition: 0.3s ease-out;
+            background-color: transparent;
+            border-top: 1px solid rgba(255, 0, 0, 0);
+        }
+
+        img:hover {
+            box-shadow: 15px 15px 20px red;
+            padding-top: 50px;
+            border-top: 1px solid red;
+
+        }
+        .s{
+            color: black;
+            font-size: 30px;
+            position: relative;
+            left: -370px;
+            top: 110px;
+            background-color: transparent;
+           
+        }
+       
+        .m{
+            font-size: 30px;
+            position: relative;
+            left: 360px;
+            top: 110px;
+        }
+
+        .song {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="movie">
+        <a href="./Movieindex.html"><img src="./mvvv.png" alt=""
+                style="float: left; margin-right: -100px;  width: 230px; height: 300px; position: absolute; left: 300px ; top: 150px;">
+        </a>
+        <h4 class="m npn">Movies</h4>
+    </div>
+
+    <div class="song">
+        <a href="./Songindex.html"><img src="./sngg.png" alt="" id="i"
+                style="float: right; margin-left: 80px; width: 230px; height: 300px; position: absolute; right: 300px; top: 150px; "></a>
+        <h4 class="s non">Songs</h4>
+    </div>
+
+    <div class="anime">
+        <a href=""><img src="" alt=""></a>
+    </div>
+    <script>
+        console.log('guna')
+        let hover = document.querySelector("img");
+        let hovers = document.querySelector('#i');
+        let nextHover = document.querySelector('.m');
+        let nextHovers = document.querySelector('.s');
+
+        hover.addEventListener('mouseover',() =>{
+            nextHover.style.opacity ='1';
+
+        });
+        hover.addEventListener('mouseout', () => {
+            nextHover.style.opacity ='0';
+        });
+
+        hovers.addEventListener('mouseover',() =>{
+            nextHovers.style.opacity ='1';
+
+        });
+        hovers.addEventListener('mouseout', () => {
+            nextHovers.style.opacity ='0';
+        });
+
+    </script>
+</body>
+
+</html>
